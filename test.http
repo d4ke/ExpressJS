@@ -1,0 +1,11 @@
+### All students
+curl http://localhost:3000/students
+
+### New student
+curl http://localhost:3000/students -H "Content-Type: application/json" -d '{"name": "petya", "start":"10.05.2024", "last":"","end":""}'
+
+### Delete student
+curl http://localhost:3000/student/petya -X DELETE 
+
+### Update student
+curl http://localhost:3000/student/petya -X PUT -H "Content-Type: application/json" -d '{"name": "petya", "start":"10.05.024", "last":"19.06.2024","end":"20.06.2024"}'
